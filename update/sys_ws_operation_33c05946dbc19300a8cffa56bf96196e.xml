@@ -9,36 +9,8 @@
         <http_method>POST</http_method>
         <name>checkin</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-
 	
 	return x_snc_k18_mars.updateCrew(request.body.data.sys_id,request.body.data.complete);
-
-	function updateCrew(astronaut,complete){
-		//take sys_id from astronaut table then creates crew record
-		//reset crew if found
-
-		var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
-		crew.get(astronaut);
-		var gdt = new GlideDateTime();
-		crew.last_check_in=gdt.getDisplayValue();
-		crew.complete=complete;
-		crew.status='in_progress';
-		if (complete==100){
-			crew.completion_date=gdt.getDisplayValue();
-			crew.status='complete';
-			crew.completion_time=GlideDateTime.subtract(new GlideDateTime(crew.mission.launch_time.getDisplayValue()), new GlideDateTime(gdt.getDisplayValue()));
-		}
-		crew.update();
-		var returnObj = {};
-		returnObj.crew={};
-		returnObj.crew.sys_id=crew.sys_id.getDisplayValue();
-		returnObj.crew.last_check_in=crew.last_check_in.getDisplayValue();
-		returnObj.crew.status=crew.status.getDisplayValue();
-		returnObj.crew.complete=crew.complete.getDisplayValue();
-		returnObj.crew.completion_time=crew.completion_time.getDisplayValue();
-		returnObj.crew.time_left=x_snc_k18_mars.getTimeLeft(crew.sys_id.getDisplayValue());
-	} 
-
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_snc_k18_mars/crew/checkin</operation_uri>
@@ -53,14 +25,14 @@
         <sys_created_by>alex</sys_created_by>
         <sys_created_on>2018-03-26 02:37:58</sys_created_on>
         <sys_id>33c05946dbc19300a8cffa56bf96196e</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>checkin</sys_name>
         <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
         <sys_policy/>
         <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
         <sys_update_name>sys_ws_operation_33c05946dbc19300a8cffa56bf96196e</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2018-03-26 15:49:18</sys_updated_on>
+        <sys_updated_on>2018-03-26 16:13:32</sys_updated_on>
         <web_service_definition display_value="Crew">b62cf442db819300a8cffa56bf96199c</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
