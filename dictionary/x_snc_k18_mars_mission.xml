@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Mission" max_length="40" name="x_snc_k18_mars_mission" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;return current.lab.getDisplayValue() + ': ' + current.launch_time;&#13;&#10;})(current);" display="true" label="Display" max_length="256" name="display" type="string" virtual="true"/>
+        <element label="Lab" max_length="32" name="lab" reference="x_snc_k18_mars_lab" type="reference"/>
+        <element label="Launch Time" max_length="40" name="launch_time" type="glide_date_time"/>
+        <index name="index">
+            <element name="lab"/>
+        </index>
+    </element>
+</database>

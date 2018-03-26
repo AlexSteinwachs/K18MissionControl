@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_k18_mars_astronaut" version="2" view="Mission">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Astronaut - Mission" name="x_snc_k18_mars_astronaut" related_list="NULL" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">dd7ebfbddb4d5300a8cffa56bf961948</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_k18_mars_m2m_astronauts_missions.astronaut</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:28:54</sys_created_on>
+            <sys_id>dd7ebfbddb4d5300a8cffa56bf961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:28:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Astronaut - Mission</calculated_name>
+            <filter/>
+            <name>x_snc_k18_mars_astronaut</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:28:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd7ebfbddb4d5300a8cffa56bf961948</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Astronaut - Mission</sys_name>
+            <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_k18_mars_astronaut_Mission</sys_update_name>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:28:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Mission" name="Mission">f44cbff9db4d5300a8cffa56bf96198b</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

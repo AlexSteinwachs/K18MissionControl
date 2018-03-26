@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Lab" max_length="40" name="x_snc_k18_mars_lab" type="collection">
+        <element label="Duration" max_length="40" name="duration" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="256" name="name" type="string"/>
+    </element>
+</database>

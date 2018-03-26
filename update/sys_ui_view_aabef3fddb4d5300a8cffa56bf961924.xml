@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,mission</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-25 20:30:04</sys_created_on>
+        <sys_id>aabef3fddb4d5300a8cffa56bf961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,mission</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_update_name>sys_ui_view_aabef3fddb4d5300a8cffa56bf961924</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-25 20:30:04</sys_updated_on>
+        <title>Sys_popup,mission</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

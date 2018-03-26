@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Crew" max_length="40" name="x_snc_k18_mars_m2m_astronauts_missions" type="collection">
+        <element label="Astronaut" max_length="32" name="astronaut" reference="x_snc_k18_mars_astronaut" type="reference"/>
+        <element label="Complete" max_length="40" name="complete" type="percent_complete"/>
+        <element label="Completion TIme" max_length="40" name="completion_time" type="glide_date_time"/>
+        <element label="Last Check In" max_length="40" name="last_check_in" type="glide_date_time"/>
+        <element label="Mission" max_length="32" name="mission" reference="x_snc_k18_mars_mission" type="reference"/>
+        <index name="index">
+            <element name="astronaut"/>
+        </index>
+        <index name="index2">
+            <element name="mission"/>
+        </index>
+    </element>
+</database>

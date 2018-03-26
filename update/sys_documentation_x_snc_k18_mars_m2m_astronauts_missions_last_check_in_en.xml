@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="last_check_in" label="Last Check In" language="en" table="x_snc_k18_mars_m2m_astronauts_missions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>last_check_in</element>
+            <help/>
+            <hint/>
+            <label>Last Check In</label>
+            <language>en</language>
+            <name>x_snc_k18_mars_m2m_astronauts_missions</name>
+            <plural>Last Check Ins</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 21:14:59</sys_created_on>
+            <sys_id>6409c40edb8d5300a8cffa56bf961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Last Check In</sys_name>
+            <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_k18_mars_m2m_astronauts_missions_last_check_in_en</sys_update_name>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 21:14:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

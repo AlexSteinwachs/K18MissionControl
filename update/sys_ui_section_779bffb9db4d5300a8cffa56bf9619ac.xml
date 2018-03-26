@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="779bffb9db4d5300a8cffa56bf9619ac" sys_domain="global" table="x_snc_k18_mars_m2m_astronauts_missions" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_id>7b9bffb9db4d5300a8cffa56bf9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>astronaut</element>
+            <position>1</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_id>739bffb9db4d5300a8cffa56bf9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_id>f39bffb9db4d5300a8cffa56bf9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mission</element>
+            <position>3</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_id>779bffb9db4d5300a8cffa56bf9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_id>f79bffb9db4d5300a8cffa56bf9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>complete</element>
+            <position>5</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:22:25</sys_created_on>
+            <sys_id>aefcbf3ddb4d5300a8cffa56bf961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:22:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_check_in</element>
+            <position>6</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 21:14:59</sys_created_on>
+            <sys_id>a409c40edb8d5300a8cffa56bf961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 21:14:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>completion_time</element>
+            <position>7</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 21:15:38</sys_created_on>
+            <sys_id>8629c40edb8d5300a8cffa56bf9619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_m2m_astronauts_missions" sys_domain="global" view="Default view">779bffb9db4d5300a8cffa56bf9619ac</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 21:15:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_k18_mars_m2m_astronauts_missions</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-25 20:16:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>779bffb9db4d5300a8cffa56bf9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_k18_mars_m2m_astronauts_missions</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+            <sys_update_name>sys_ui_section_779bffb9db4d5300a8cffa56bf9619ac</sys_update_name>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-25 20:16:30</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
