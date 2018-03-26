@@ -3,9 +3,20 @@
     <element label="Crew" max_length="40" name="x_snc_k18_mars_m2m_astronauts_missions" type="collection">
         <element label="Astronaut" max_length="32" name="astronaut" reference="x_snc_k18_mars_astronaut" type="reference"/>
         <element label="Complete" max_length="40" name="complete" type="percent_complete"/>
-        <element label="Completion TIme" max_length="40" name="completion_time" type="glide_date_time"/>
+        <element label="Completion Date" max_length="40" name="completion_date" type="glide_date_time"/>
+        <element label="Completion TIme" max_length="40" name="completion_time" type="glide_duration"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;return current.mission.getDisplayValue() + ': ' + current.astronaut.getDisplayValue();&#13;&#10;})(current);" display="true" label="Display" max_length="256" name="display" type="string" virtual="true"/>
         <element label="Last Check In" max_length="40" name="last_check_in" type="glide_date_time"/>
         <element label="Mission" max_length="32" name="mission" reference="x_snc_k18_mars_mission" type="reference"/>
+        <element label="Pod" max_length="2" name="pod" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Loaded" sequence="100" value="loaded"/>
+                <element label="In Progress" sequence="200" value="in_progress"/>
+                <element label="Complete" sequence="300" value="complete"/>
+                <element label="Lost in Space" sequence="400" value="lost"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="astronaut"/>
         </index>

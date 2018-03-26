@@ -5,27 +5,55 @@
             <element>lab</element>
             <position>0</position>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 21:08:22</sys_created_on>
-            <sys_id>e3774c8adb8d5300a8cffa56bf9619b0</sys_id>
+            <sys_created_on>2018-03-26 02:52:47</sys_created_on>
+            <sys_id>3856598adbc19300a8cffa56bf961923</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_mission" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a3774c8adb8d5300a8cffa56bf9619ae</sys_ui_section>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 21:08:22</sys_updated_on>
+            <sys_updated_on>2018-03-26 02:52:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lab.duration</element>
+            <position>1</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-26 02:52:47</sys_created_on>
+            <sys_id>b856598adbc19300a8cffa56bf961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_mission" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a3774c8adb8d5300a8cffa56bf9619ae</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-26 02:52:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scheduled_launch</element>
+            <position>2</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-26 02:52:47</sys_created_on>
+            <sys_id>3c56598adbc19300a8cffa56bf961923</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_mission" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a3774c8adb8d5300a8cffa56bf9619ae</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-26 02:52:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>launch_time</element>
-            <position>1</position>
+            <position>3</position>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 21:08:22</sys_created_on>
-            <sys_id>67774c8adb8d5300a8cffa56bf9619b0</sys_id>
+            <sys_created_on>2018-03-26 02:52:47</sys_created_on>
+            <sys_id>bc56598adbc19300a8cffa56bf961923</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_mission" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a3774c8adb8d5300a8cffa56bf9619ae</sys_ui_section>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 21:08:22</sys_updated_on>
+            <sys_updated_on>2018-03-26 02:52:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

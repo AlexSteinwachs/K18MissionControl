@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_k18_mars.updateCrew</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>updateCrew</name>
+        <script><![CDATA[function updateCrew(astronaut,complete){
+	var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
+	crew.get(astronaut);
+	var gdt = new GlideDateTime();
+	crew.last_check_in=gdt.getDisplayValue();
+	crew.complete=complete;
+	crew.status='in_progress';
+	if (complete==100){
+		crew.completion_date=gdt.getDisplayValue();
+		crew.status='complete';
+		crew.completion_time=GlideDateTime.subtract(new GlideDateTime(crew.mission.launch_time.getDisplayValue()),
+													new GlideDateTime(gdt.getDisplayValue()));
+	}
+	crew.update();
+	var returnObj = {};
+	returnObj.sys_id=crew.sys_id.getDisplayValue();
+	returnObj.last_check_in=crew.last_check_in.getDisplayValue();
+	returnObj.status=crew.status.getDisplayValue();
+	returnObj.complete=crew.complete.getDisplayValue();
+	returnObj.completion_time=crew.completion_time.getDisplayValue();
+	returnObj.time_left=x_snc_k18_mars.getTimeLeft(crew.sys_id.getDisplayValue());
+	return returnObj;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-26 15:48:35</sys_created_on>
+        <sys_id>37b740d6db4d9300a8cffa56bf9619e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>updateCrew</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_update_name>sys_script_include_37b740d6db4d9300a8cffa56bf9619e5</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-26 15:51:36</sys_updated_on>
+    </sys_script_include>
+</record_update>
