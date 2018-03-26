@@ -3,17 +3,31 @@
     <sys_ui_related sys_domain="global" table="x_snc_k18_mars_lab" version="2" view="Mission">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Lab - Mission" name="x_snc_k18_mars_lab" related_list="NULL" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">ef424c82db8d5300a8cffa56bf9619f2</list_id>
+            <list_id display_value="Lab - Mission" name="x_snc_k18_mars_lab" related_list="NULL" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a1110192db41d300a8cffa56bf9619cf</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_snc_k18_mars_mission.lab</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 20:45:42</sys_created_on>
-            <sys_id>a7424c82db8d5300a8cffa56bf9619f3</sys_id>
+            <sys_created_on>2018-03-26 19:58:28</sys_created_on>
+            <sys_id>61110192db41d300a8cffa56bf9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 20:45:42</sys_updated_on>
+            <sys_updated_on>2018-03-26 19:58:28</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Lab - Mission" name="x_snc_k18_mars_lab" related_list="NULL" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">a1110192db41d300a8cffa56bf9619cf</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_snc_k18_mars_trackers.lab</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-26 19:58:28</sys_created_on>
+            <sys_id>a9110192db41d300a8cffa56bf9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-26 19:58:28</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Lab - Mission</calculated_name>
@@ -24,10 +38,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 20:45:42</sys_created_on>
+            <sys_created_on>2018-03-26 19:58:28</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef424c82db8d5300a8cffa56bf9619f2</sys_id>
+            <sys_id>a1110192db41d300a8cffa56bf9619cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Lab - Mission</sys_name>
             <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
@@ -35,7 +49,7 @@
             <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
             <sys_update_name>sys_ui_related_x_snc_k18_mars_lab_Mission</sys_update_name>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 20:45:42</sys_updated_on>
+            <sys_updated_on>2018-03-26 19:58:28</sys_updated_on>
             <sys_user/>
             <view display_value="Mission" name="Mission">f44cbff9db4d5300a8cffa56bf96198b</view>
             <view_name/>

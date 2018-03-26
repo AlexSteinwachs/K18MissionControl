@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-26 19:56:05</sys_created_on>
+        <sys_id>66804152db41d300a8cffa56bf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_k18_mars_trackers.x_snc_k18_mars.user</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_security_acl display_value="x_snc_k18_mars_trackers">e2804152db41d300a8cffa56bf9619be</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_66804152db41d300a8cffa56bf9619c2</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-26 19:56:05</sys_updated_on>
+        <sys_user_role display_value="x_snc_k18_mars.user" name="x_snc_k18_mars.user">8b2a658ddb451700a8cffa56bf961933</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

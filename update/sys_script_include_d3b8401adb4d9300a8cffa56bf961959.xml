@@ -8,7 +8,7 @@
         <client_callable>true</client_callable>
         <description/>
         <name>loadCrew</name>
-        <script><![CDATA[function loadCrew(astronaut,pod){
+        <script><![CDATA[function loadCrew(astronaut,pod,pod_url){
 	//take sys_id from astronaut table then creates crew record
 	//reset crew if found
 	var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
@@ -22,6 +22,7 @@
 			crew.completion_time='';
 			crew.completion_date='';
 			crew.pod=pod;
+			crew.pod_url=pod_url;
 			crew.status='loaded';
 			crew.update();
 		}
@@ -31,6 +32,7 @@
 		crew.pod=pod;
 		crew.last_check_in=gdt.getDisplayValue();
 		crew.complete=0;
+		crew.pod_url=pod_url;
 		crew.status='loaded';
 		crew.insert();
 	}
@@ -38,6 +40,8 @@
 	returnObj.sys_id=crew.sys_id.getDisplayValue();
 	returnObj.last_check_in=crew.last_check_in.getDisplayValue();
 	returnObj.status=crew.status.getDisplayValue();
+	returnObj.pod=crew.pod.getDisplayValue();
+	returnObj.pod_url=crew.pod_url.getDisplayValue();
 	returnObj.complete=crew.complete.getDisplayValue();
 	return returnObj;
 } ]]></script>
@@ -45,13 +49,13 @@
         <sys_created_by>alex</sys_created_by>
         <sys_created_on>2018-03-26 15:52:38</sys_created_on>
         <sys_id>d3b8401adb4d9300a8cffa56bf961959</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>loadCrew</sys_name>
         <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
         <sys_update_name>sys_script_include_d3b8401adb4d9300a8cffa56bf961959</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2018-03-26 15:55:03</sys_updated_on>
+        <sys_updated_on>2018-03-26 19:05:03</sys_updated_on>
     </sys_script_include>
 </record_update>

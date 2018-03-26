@@ -9,6 +9,7 @@
         <element label="Last Check In" max_length="40" name="last_check_in" type="glide_date_time"/>
         <element label="Mission" max_length="32" name="mission" reference="x_snc_k18_mars_mission" type="reference"/>
         <element label="Pod" max_length="2" name="pod" type="string"/>
+        <element label="POD URL" max_length="1024" name="pod_url" type="url"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element label="Loaded" sequence="100" value="loaded"/>
