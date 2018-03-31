@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+	/* widget controller */
+	var c = this;
+
+	c.launch = function() {
+		c.data.launch=true;
+		c.server.update();
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>launchmission</id>
+        <internal>false</internal>
+        <link/>
+        <name>launchMission</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.mission=x_snc_k18_mars.getActiveMissionInfo().getDisplayValue();
+	data.scheduled_launch=x_snc_k18_mars.getActiveMissionInfo().scheduled_launch.getDisplayValue();
+	if (input) {
+		x_snc_k18_mars.launchMission();
+		data.launched=true;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-31 00:15:04</sys_created_on>
+        <sys_id>cb2222ebdb4dd700a8cffa56bf961929</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>launchMission</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_update_name>sp_widget_cb2222ebdb4dd700a8cffa56bf961929</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-31 00:45:35</sys_updated_on>
+        <template><![CDATA[  <div class="full_width text-center">
+    {{c.data.mission}}<br>
+    <div class="btn btn-danger" ng-hide="c.data.launched" ng-disabled="c.data.launch" ng-click="c.launch()" ><i class="fa fa-rocket fa-5x"></i></div>
+    <div class="btn btn-success" ng-show="c.data.launched" ng-disabled="c.data.launch" ><i class="fa fa-rocket fa-5x"></i></div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
