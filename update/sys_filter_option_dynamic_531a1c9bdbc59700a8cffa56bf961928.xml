@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for_default>true</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>true</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <filter_by_schedule/>
+        <label>Active Mission 2</label>
+        <order/>
+        <roles/>
+        <script>x_snc_k18_mars.getActiveMission()</script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-29 19:42:08</sys_created_on>
+        <sys_id>531a1c9bdbc59700a8cffa56bf961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active Mission 2</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_531a1c9bdbc59700a8cffa56bf961928</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-29 19:42:08</sys_updated_on>
+        <table>x_snc_k18_mars_mission</table>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+</record_update>
