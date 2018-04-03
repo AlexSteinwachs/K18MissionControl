@@ -17,43 +17,43 @@
 	trackers.addQuery('lab',mission.lab.sys_id);
 	trackers.query();
 	while (trackers.next()){
- 		var obj = {"description": trackers.description.getDisplayValue(),
- 			"module_name": trackers.module.getDisplayValue()
-		};
- 		trackerArr.push(obj);
+		var obj = {"description": trackers.description.getDisplayValue(),
+				   "module_name": trackers.module.getDisplayValue()
+				  };
+		trackerArr.push(obj);
 	}
-//gs.info(JSON.stringify(trackerArr));
-var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
+	//gs.info(JSON.stringify(trackerArr));
+	var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
 	crew.addQuery('mission',gs.getProperty('x_snc_k18_mars.active_mission'));
 	crew.query();
 	var crewArr=[];
 	while (crew.next()){
-			var r = new sn_ws.RESTMessageV2('x_snc_k18_mars.syncTrackers', 'sync');
-	r.setStringParameterNoEscape('pod_url', crew.pod_url.getDisplayValue());
-	r.setRequestBody(JSON.stringify(trackerArr));
-	var response = r.execute();
+		var r = new sn_ws.RESTMessageV2('x_snc_k18_mars.syncTrackers', 'sync');
+		r.setStringParameterNoEscape('pod_url', crew.pod_url.getDisplayValue());
+		r.setRequestBody(JSON.stringify(trackerArr));
+		var response = r.execute();
 		var crewObj={
 			"crew":crew.getDisplayValue(),
 			"return":response
 		};
 		crewArr.push(crewObj);
-	//var httpStatus = response.getStatusCode();
-	//return response.getBody();
+		//var httpStatus = response.getStatusCode();
+		//return response.getBody();
 	}
-	
-return crewArr;
+
+	return crewArr;
 }]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>alex</sys_created_by>
         <sys_created_on>2018-03-26 20:11:45</sys_created_on>
         <sys_id>4e334116db41d300a8cffa56bf96192f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>syncTrackers</sys_name>
         <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
         <sys_update_name>sys_script_include_4e334116db41d300a8cffa56bf96192f</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2018-03-30 21:22:03</sys_updated_on>
+        <sys_updated_on>2018-04-03 01:26:40</sys_updated_on>
     </sys_script_include>
 </record_update>

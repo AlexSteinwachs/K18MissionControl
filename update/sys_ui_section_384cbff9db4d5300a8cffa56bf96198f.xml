@@ -5,13 +5,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 20:19:18</sys_created_on>
-            <sys_id>fc4c333ddb4d5300a8cffa56bf961976</sys_id>
+            <sys_created_on>2018-03-31 02:01:18</sys_created_on>
+            <sys_id>177afe67dbcdd700a8cffa56bf961930</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_astronaut" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">384cbff9db4d5300a8cffa56bf96198f</sys_ui_section>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 20:19:18</sys_updated_on>
+            <sys_updated_on>2018-03-31 02:01:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,27 @@
             <element>email</element>
             <position>1</position>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2018-03-25 20:19:18</sys_created_on>
-            <sys_id>704c333ddb4d5300a8cffa56bf961977</sys_id>
+            <sys_created_on>2018-03-31 02:01:18</sys_created_on>
+            <sys_id>937afe67dbcdd700a8cffa56bf96193d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_astronaut" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">384cbff9db4d5300a8cffa56bf96198f</sys_ui_section>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2018-03-25 20:19:18</sys_updated_on>
+            <sys_updated_on>2018-03-31 02:01:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>photo</element>
+            <position>2</position>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2018-03-31 02:01:18</sys_created_on>
+            <sys_id>177afe67dbcdd700a8cffa56bf96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_k18_mars_astronaut" sys_domain="global" view="f44cbff9db4d5300a8cffa56bf96198b">384cbff9db4d5300a8cffa56bf96198f</sys_ui_section>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2018-03-31 02:01:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

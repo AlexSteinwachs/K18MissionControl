@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_k18_mars.getCrew</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getCrew</name>
+        <script><![CDATA[function getCrew(mission){
+	var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
+	if (mission){
+		crew.addQuery('mission',mission);
+	}
+	crew.orderByDesc('complete');
+	crew.query();
+	var crewArr = [];
+	while (crew.next()){
+		var crewObj = {
+			"astronaut" : crew.astronaut.getDisplayValue(),
+ 			"pod" : crew.pod.getDisplayValue(),
+ 			"photo" : crew.astronaut.photo.getDisplayValue(),
+ 			"status" : crew.status.getDisplayValue(),
+ 			"complete" : crew.complete.getDisplayValue(),
+ 			"last_check_in" : crew.last_check_in.getDisplayValue(),
+ 			"completion_time" : crew.completion_time.getDisplayValue()
+		};
+		crewArr.push(crewObj);
+	}
+	return crewArr;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2018-03-31 02:23:55</sys_created_on>
+        <sys_id>cc8dba2bdbcdd700a8cffa56bf961997</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>getCrew</sys_name>
+        <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
+        <sys_update_name>sys_script_include_cc8dba2bdbcdd700a8cffa56bf961997</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2018-03-31 02:40:53</sys_updated_on>
+    </sys_script_include>
+</record_update>
