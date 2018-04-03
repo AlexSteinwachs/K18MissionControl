@@ -6,15 +6,18 @@
         <sys_created_by>alex</sys_created_by>
         <sys_created_on>2018-03-25 21:24:14</sys_created_on>
         <sys_id>641b848edb8d5300a8cffa56bf96199b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>K18 Mission to Mars</sys_name>
         <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
         <sys_policy/>
         <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
         <sys_update_name>sys_properties_category_641b848edb8d5300a8cffa56bf96199b</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2018-04-03 02:16:30</sys_updated_on>
-        <title><![CDATA[<p style="margin: 0in; font-family: Calibri; font-size: 20.0pt;">K18 Mission Control</p>
+        <sys_updated_on>2018-04-03 03:37:54</sys_updated_on>
+        <title><![CDATA[<div style="direction: ltr; border-width: 100%;">
+<div style="direction: ltr; margin-top: 0in; margin-left: 0in; width: 14.0513in;">
+<div style="direction: ltr; margin-top: 0in; margin-left: 0in; width: 14.0513in;">
+<p style="margin: 0in; font-family: Calibri; font-size: 20.0pt;">K18 Mission Control</p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Setup Instructions</span></p>
 <ol style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-family: Calibri; font-size: 11pt; font-weight: normal; font-style: normal; list-style-position: inside;" type="1"><li style="font-weight: normal; font-style: normal; font-family: Calibri; font-size: 11pt;" value="1">Load the lab details into the<span style="font-family: Calibri; font-size: 11.0pt; font-weight: bold; font-style: normal;"> x_snc_k18_mars_lab</span><span style="font-family: Calibri; font-size: 11.0pt; font-weight: normal; font-style: normal;"> table</span></li><li style="font-family: Calibri; font-size: 11pt;">Load the outline and success criteria into the <span style="font-weight: bold; font-family: Calibri; font-size: 11.0pt;">x_snc_k18_mars_trackers</span><span style="font-family: Calibri; font-size: 11.0pt;"> table</span></li><li style="font-family: Calibri; font-size: 11pt;">Load all the individual scheduled sessions for each lab in the<span style="font-weight: bold; font-family: Calibri; font-size: 11.0pt;"> x_snc_k18_mars_mission</span><span style="font-family: Calibri; font-size: 11.0pt;"> table</span></li><li style="font-family: Calibri; font-size: 11pt;">Open the mission for the current round and push the <span style="font-weight: bold; font-family: Calibri; font-size: 11.0pt;">Set Active</span><span style="font-family: Calibri; font-size: 11.0pt;"> UI Action. This will allow pods to check in under that mission</span></li><li style="font-family: Calibri; font-size: 11pt;">When ready to launch the mission, click the <span style="font-weight: bold; font-family: Calibri; font-size: 11.0pt;">Launch!</span><span style="font-family: Calibri; font-size: 11.0pt;"> UI Action</span></li></ol>
@@ -46,8 +49,12 @@
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Launches the current active mission. This syncs the tracker data to the pod instances and starts the timer</p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_mars.launchMission()</span></p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Syncs the tracker data for the current active mission to the pod instances, returns array of crew</p>
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_mars.syncTrackers()</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Returns crew details from a new crew record. Resets to start if crew record already exists.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//{&#34;sys_id&#34;:&#34;504e8a28db15db00a8cffa56bf961957&#34;,&#34;last_check_in&#34;:&#34;2018-04-02 19:30:17&#34;,&#34;status&#34;:&#34;Loaded&#34;,&#34;pod&#34;:&#34;1.0&#34;,&#34;pod_url&#34;:&#34;https://asteisc1.service-now.com/&#34;,&#34;complete&#34;:&#34;0&#34;}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_mars.loadCrew(</span><span style="font-style: italic;">astronaut sys_id, pod int, pod_url url</span><span style="font-weight: bold;">)</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Syncs the tracker data for the current active mission to the pod instances, returns array of crew. Optional crew sys_id will only update that crew record</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_mars.syncTrackers(</span><span style="font-style: italic;">crew sys_id</span><span style="font-weight: bold;">)</span></p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Updates a single crew record with the current completion percent. If complete is 100 then the completion time is recorded and the status is updated.</p>
 <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_mars.updateCrew(</span><span style="font-style: italic;">astronaut sys_id, complete int</span><span style="font-weight: bold;">)</span></p>
@@ -103,7 +110,87 @@
 <p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">    &#34;complete&#34;: &#34;0&#34;</p>
 <p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">  }</p>
 <p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">}</p>
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>]]></title>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<div style="direction: ltr; border-width: 100%;">
+<div style="direction: ltr; margin-top: 0in; margin-left: 0in; width: 12.309in;">
+<div style="direction: ltr; margin-top: 0in; margin-left: 0in; width: 12.309in;">
+<p style="margin: 0in; font-family: Calibri; font-size: 20.0pt;">K18 Pod</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">The purpose of this application is two fold:</p>
+<ol style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-family: Calibri; font-size: 11pt; font-weight: normal; font-style: normal; list-style-position: inside;" type="1"><li style="font-weight: normal; font-style: normal; font-family: Calibri; font-size: 11pt;" value="1">Load the participant&#39;s data into the mission control app</li><li style="font-family: Calibri; font-size: 11pt;">Track the percent complete for the current lab</li></ol>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">The design specs required a tracker table (x_snc_k18_pod_completion_tracker) to hold a list of modules (Name and description of what that module needs to be complete).</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">It is up to the lab to update the tracker table (x_snc_k18_pod_completion_tracker) when a specific task is complete. Lab creators can call the API to update the module.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Setup Instructions</span></p>
+<ol style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-family: Calibri; font-size: 11pt; font-weight: normal; font-style: normal; list-style-position: inside;" type="1"><li style="font-weight: normal; font-style: normal; font-family: Calibri; font-size: 11pt;" value="1">Load the update set on the lab instances</li><li style="font-family: Calibri; font-size: 11pt;">Create an update set that automatically updates the x_snc_k18_pod_completion_tracker table.</li><li style="font-family: Calibri; font-size: 11pt;">Update the <span style="font-weight: bold; font-family: Calibri; font-size: 11.0pt;">x_snc_k18_pod.master_url</span><span style="font-family: Calibri; font-size: 11.0pt;"> sys_property with the mission control URL (Example: asteisc1demo.service-now.com)</span></li><li style="font-family: Calibri; font-size: 11pt;">Open /pod?id&#61;pod url to have people register</li></ol>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Server Side APIs</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Returns the current percent complete of the modules for that instance</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_pod.checkComplete()</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Updates mission control with current pod&#39;s percent complete. Returns crew data.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//{&#34;result&#34;:{&#34;sys_id&#34;:&#34;34151e2cdb15db00a8cffa56bf9619be&#34;,&#34;last_check_in&#34;:&#34;2018-04-02 20:08:48&#34;,&#34;status&#34;:&#34;In Progress&#34;,&#34;complete&#34;:&#34;36&#34;,&#34;completion_time&#34;:&#34;&#34;,&#34;time_left&#34;:&#34;34 Minutes&#34;}}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_pod.checkin()</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Loads astronaut and pod data into the mission control instance. Returns sys_id of crew record and updates the <span style="font-weight: bold;">x_snc_k18_pod.crew_sys_id</span> sys_property</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_pod.load(</span><span style="font-style: italic;">name string, email string, pod int</span><span style="font-weight: bold;">)</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Loads an array of tracker records into the x_snc_k18_pod_completion_tracker and syncs with mission control. Deletes existing records. Returns true.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//[{&#34;description&#34;:&#34;Description 1&#34;,&#34;module_name&#34;:&#34;Module 1&#34;},{&#34;description&#34;:&#34;Description 2&#34;,&#34;module_name&#34;:&#34;Module 2&#34;},{&#34;description&#34;:&#34;Description 3&#34;,&#34;module_name&#34;:&#34;Module 3&#34;}]</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_pod.loadTrackers(</span><span style="font-style: italic;">trackerArray array</span><span style="font-weight: bold;">)</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Updates all the x_snc_k18_pod_completion_tracker records with given name to the given state (complete or not_complete). Returns true.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">x_snc_k18_pod.updateModule(</span><span style="font-style: italic;">name string, not_complete|complete</span><span style="font-weight: bold;">)</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Inbound REST APIs - No Authentication required</span></p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Update the pod with an array of Modules. Calls the x_snc_k18_pod.loadTrackers() server API.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Title:</span> loadTrackers</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">URL:</span> /api/x_snc_k18_pod/pods/loadTrackers</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Method:</span> POST</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">URL Params:</span> None</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Data Params: </span></p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">{</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">[</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">{&#34;description&#34;:&#34;Description 1&#34;,&#34;module_name&#34;:&#34;Module 1&#34;},</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">{&#34;description&#34;:&#34;Description 2&#34;,&#34;module_name&#34;:&#34;Module 2&#34;},</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">{&#34;description&#34;:&#34;Description 3&#34;,&#34;module_name&#34;:&#34;Module 3&#34;}</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">]</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Success Response:</span></p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">{</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">  &#34;result&#34;: &#34;success&#34;</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">//Updates a specific module name to complete or not_complete. Uses the x_snc_k18_pod.updateModule() API.</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Title:</span> updateModule</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">URL:</span> /api/x_snc_k18_pod/pods/updateModule</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Method:</span> POST</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">URL Params:</span> None</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Data Params: </span></p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">{</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">&#34;name&#34;:&#34;Module 1&#34;,</p>
+<p style="margin: 0in; margin-left: .75in; font-family: Calibri; font-size: 11.0pt;">&#34;state&#34;:&#34;not_complete&#34;</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"><span style="font-weight: bold;">Success Response:</span></p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">{</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">  &#34;result&#34;: &#34;success&#34;</p>
+<p style="margin: 0in; margin-left: .375in; font-family: Calibri; font-size: 11.0pt;">}</p>
+<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;"> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></title>
     </sys_properties_category>
     <sys_translated_text action="delete_multiple" query="documentkey=641b848edb8d5300a8cffa56bf96199b"/>
 </record_update>

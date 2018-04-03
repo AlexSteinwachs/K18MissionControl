@@ -8,7 +8,7 @@
         <client_callable>true</client_callable>
         <description/>
         <name>syncTrackers</name>
-        <script><![CDATA[function syncTrackers(){
+        <script><![CDATA[function syncTrackers(crew_sys_id){
 	var trackerArr=[];
 	var mission= new GlideRecord('x_snc_k18_mars_mission');
 	mission.get(gs.getProperty('x_snc_k18_mars.active_mission'));
@@ -25,6 +25,9 @@
 	//gs.info(JSON.stringify(trackerArr));
 	var crew = new GlideRecord('x_snc_k18_mars_m2m_astronauts_missions');
 	crew.addQuery('mission',gs.getProperty('x_snc_k18_mars.active_mission'));
+	if (crew_sys_id){
+		crew.addQuery('sys_id',crew_sys_id);
+	}
 	crew.query();
 	var crewArr=[];
 	while (crew.next()){
@@ -47,13 +50,13 @@
         <sys_created_by>alex</sys_created_by>
         <sys_created_on>2018-03-26 20:11:45</sys_created_on>
         <sys_id>4e334116db41d300a8cffa56bf96192f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>syncTrackers</sys_name>
         <sys_package display_value="K18 Mission Control" source="x_snc_k18_mars">3e2a218ddb451700a8cffa56bf961900</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="K18 Mission Control">3e2a218ddb451700a8cffa56bf961900</sys_scope>
         <sys_update_name>sys_script_include_4e334116db41d300a8cffa56bf96192f</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2018-04-03 01:26:40</sys_updated_on>
+        <sys_updated_on>2018-04-03 02:58:39</sys_updated_on>
     </sys_script_include>
 </record_update>
